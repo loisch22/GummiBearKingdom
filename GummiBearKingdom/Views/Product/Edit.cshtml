@@ -1,29 +1,35 @@
 ﻿@model GummiBearKingdom.Models.Product
 
 @{
-    ViewData["Title"] = "Products";
+    ViewData["Title"] = "Products - Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Edit and Update</h1> 
+<div class="edit-header">
+    <h1 class="title">Edit and Update</h1>
+</div>
 
-<h3>@Html.DisplayFor(model => model.Name)</h3>
+<div class="container">
+    <h3 class="edit-product-name">@Html.DisplayFor(model => model.Name)</h3>
 
-@using (Html.BeginForm())
-{
-    @Html.HiddenFor(model => model.ProductId)
+        @using (Html.BeginForm())
+        {
+	<div class="form-group">
+            @Html.HiddenFor(model => model.ProductId)
 
-    @Html.LabelFor(model => model.Name)
-    @Html.EditorFor(model => model.Name)
+            @Html.LabelFor(model => model.Name)
+            @Html.EditorFor(model => model.Name)
 
-    @Html.LabelFor(model => model.Cost)
-    @Html.EditorFor(model => model.Cost)
+            @Html.LabelFor(model => model.Cost)
+            @Html.EditorFor(model => model.Cost)
 
-    @Html.LabelFor(model => model.Country)
-    @Html.EditorFor(model => model.Country)
+            @Html.LabelFor(model => model.Country)
+            @Html.EditorFor(model => model.Country)
 
-    @Html.LabelFor(model => model.Image)
-    @Html.EditorFor(model => model.Image)
+            @Html.LabelFor(model => model.Image)
+            @Html.EditorFor(model => model.Image)
 
-    <input type="submit" value="Update and Save">
-}
+            <input class="btn btn-info" type="submit" value="Update and Save">
+         </div>
+	}
+</div>

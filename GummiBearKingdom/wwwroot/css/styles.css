@@ -1,8 +1,137 @@
-﻿.card-img-top {
+﻿body {
+    background: #f5f0eb;
+}
+.header {
+  background-image: url("https://cdn.albanesecandy.com/candy-store/images/products/popup/assorted-fruit-gummi-bears_3.jpg");
+  background-size: cover; 
+  background-attachment: fixed;
+  padding: 10%; 
+  text-align: center;
+}
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5em;
+    letter-spacing: 5px;
+    margin: 2% 3% 2% 3%;
+    padding: 15px 8px 15px 8px;
+    color: #ffffff;
+    background-color: #ae0001;
+    opacity: .9;
+}
+.view-all-btn {
+    margin-top: 5%;
+    background-color: #009eb2;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 15px 20px 15px 20px;
+    font-size: 20px;
+    opacity: 1;
+    letter-spacing: 5px;
+}
+.view-all-btn:hover {
+    background-color: #009eb2;
+    opacity: .8;
+    cursor: pointer;
+}
+.subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    letter-spacing: 5px;
+    color: #555555;
+}
+.card {
+    border-radius: 0;
+    margin-top: 15px;
+}
+.card-block {
+    padding: 0;
+}
+.card-img-top {
     width: 100%;
     height: 50%;
+    background-size: cover;
+    background-position: center;
 }
 .card-title {
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 1px;
+    margin: 5%;
+    text-align: center;
 }
+.company-info, .products-container {
+    margin-top: 4%;
+    margin-bottom: 10%;
+}
+.view-details-btn {
+    border-radius: 0;
+    background-color: #ae0001;
+    border: none;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    padding: 8%;
+}
+.view-details-btn:hover {
+    background-color: #701215;
+    cursor: pointer;
+}
+.navbar {
+    background-color: #a7c3cd;
+    padding: 1%;
+}
+.navbar-nav {
+    margin-right: 2=\
+}
+a {
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+a:hover {
+    text-decoration: none;
+}
+.header-products {
+    background-image: url("https://www.nutstop.com/wp-content/uploads/2015/06/Gummy-Bears-Nutstop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10%;
+    text-align: center;
+}
+.image-col, .info-col {
+    margin: 2%;
+}
+.edit-remove {
+    float: right;
+    margin-right: 5%;
+}
+.details-product-name {
+    margin-top: 15%;
+    font-family: 'Open Sans', sans-serif;
+}
+.edit-header {
+    background-image: url("https://www.uncommongoods.com/images/items/20800/20878_1_1200px.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 10%;
+    text-align: center;
+}
+.edit-product-name {
+    margin: 2%;
+    font-size: 2em;
+    letter-spacing: 3px;
+    font-family: 'Open Sans', sans-serif;
+}
+.form-group {
+    font-family: 'Open Sans', sans-serif;
+}
+.create-header {
+    background-image: url("https://cdn.albanesecandy.com/candy-store/images/products/popup/12-flavor-gummi-bears_6.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    padding: 10%;
+    text-align: center;
+}
+.create-form {
+    margin-top: 2%;
+}
+

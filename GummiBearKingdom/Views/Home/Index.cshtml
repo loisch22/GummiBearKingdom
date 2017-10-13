@@ -1,9 +1,29 @@
-﻿@{
+﻿@model IEnumerable<GummiBearKingdom.Models.Product>
+
+@{
     ViewData["Title"] = "Products";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="header">
-    <h1 class="gummi-top">Gummi Bear Kingdom</h1>
-    <input type="button" class="btn btn-warning" value="View Products" onclick="location.href='@Url.Action("Index", "Product")'"/>
+    <h1 class="title">Gummi Bear Kingdom</h1>
+    <input type="button" class="btn view-all-btn" value="View All Products" onclick="location.href='@Url.Action("Index", "Product")'"/>
  </div>
+
+
+<div class="container company-info">
+    <h3 class="subtitle">Featured Products</h3>
+	<div class="card-deck">
+        @foreach (var product in Model)
+        {
+          <div class="card">
+            <div class="card-block">
+                <img class="card-img-top" src="@Html.DisplayFor(model => product.Image)" alt="Product Image">
+            </div>
+			<input type="button" class="btn btn-info view-details-btn" value="View Details" onclick="location.href='@Url.Action("Details", "Product", new {id = product.ProductId})'"/>
+          </div>
+        }
+    </div>
+</div>
+
+

@@ -23,7 +23,8 @@ _The layout of this site is based on <a href="https://s-media-cache-ak0.pinimg.c
 ## Wishlist
 * _Click `View details` and have pop-up box load with details instead of routing to new view_
 * _Use <a href="https://v4-alpha.getbootstrap.com/components/card/?">image overlay</a>
-
+* _Fix Home view to have a paralax scroll_
+* _Add styling to forms_
 
 ## Setup/Installation Requirements
 

@@ -5,9 +5,11 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1 class="products-title">Gummi Bear Kingdom Products</h1>
+<div class="header-products">
+    <h1 class="title">Gummi Bear Kingdom Products</h1>
+</div>
 
-<div class="container">
+<div class="container products-container">
     <div class="card-deck">
     @foreach (var product in Model)
     {
@@ -15,8 +17,8 @@
         <img class="card-img-top" src="@Html.DisplayFor(model => product.Image)" alt="Product Image">
         <div class="card-block">
           <h4 class="card-title">@Html.DisplayFor(model => product.Name)</h4>
-          <input type="button" class="btn btn-info" value="View Details" onclick="location.href='@Url.Action("Details", new {id = product.ProductId})'"/>
         </div>
+	    <input type="button" class="btn btn-info view-details-btn" value="View Details" onclick="location.href='@Url.Action("Details", new {id = product.ProductId})'"/>
       </div>
     }
 	</div>
