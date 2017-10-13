@@ -8,8 +8,8 @@
 ## Description
 
 _This site will show all of Gummi Bear Kingdom's products. The site is specifically for admins to view products, product details, add new, edit, and remove products as well._
-_The layout of this site is based on <a href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjSj-rkgO7WAhWoqlQKHdr0ByMQjRwIBw&url=https%3A%2F%2Fwww.templatemonster.com%2Fwebsite-templates%2F47337.html&psig=AOvVaw1Gzm9S0Fa0yMsYUr3oErKt&ust=1507997983679479">Body Icon</a>
-(Warning: The site promotes treatment for cellulite, but the Gummi Bear Kingdom site will be based off of the top two sections of the webpage layout)_
+_The layout of this site is based on <a href="https://s-media-cache-ak0.pinimg.com/originals/ac/24/d2/ac24d24acfb04b3e58eebd02a0647a46.jpg">this layout</a>_
+
 
 || Behavior  | Input  | Output  |
 |---|---|---|---|
@@ -18,6 +18,12 @@ _The layout of this site is based on <a href="https://www.google.com/url?sa=i&rc
 |3| User may click `add` from navbar to create a new product | Click `Create new product` | View displays form to create new product |
 |4| User may click `edit` to edit/update product information | Click `Edit` | View displays edit form |
 |5| User may click `remove` to remove a product | Click `Remove` | View display remove confirmation page, then is removed once `remove` is clicked |
+
+
+## Wishlist
+* _Click `View details` and have pop-up box load with details instead of routing to new view_
+* _Use <a href="https://v4-alpha.getbootstrap.com/components/card/?">image overlay</a>
+
 
 ## Setup/Installation Requirements
 

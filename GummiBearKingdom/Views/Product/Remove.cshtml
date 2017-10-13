@@ -1,0 +1,16 @@
+﻿@model GummiBearKingdom.Models.Product
+
+@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="delete-confirm-head">Are you sure you want to remove @Html.DisplayFor(model => model.Name)?</h1>
+
+@using (Html.BeginForm())
+{
+<input type="submit" class="btn btn-info" value="Confirm" onclick="location.href='@Url.Action("Remove", new{ id = Model.ProductId})'"/>
+}
+
+
+<p>@Html.ActionLink("Back to products", "Index")</p>
