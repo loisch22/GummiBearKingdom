@@ -74,9 +74,9 @@ Copyright (c) 2017 **_Lois Choi**
 ```
 If missing, add:
 ```
-<Item Group>
+<ItemGroup>
   <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.2" />
-</Item Group>
+</ItemGroup>
 ```
 
 #### Commands in terminal or VS Package Console (Windows only)

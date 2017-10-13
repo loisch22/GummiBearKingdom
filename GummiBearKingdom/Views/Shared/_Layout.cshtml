@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Gummi Bear Kingdom</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded nav-layout">
+        <a class="navbar-brand">@Html.ActionLink("Gummi Bear Kingdom", "Index", "Home")</a>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link">@Html.ActionLink("Products", "Index", "Product")</a>
+        </div>
+    </nav>
+ 
+    @RenderBody()
+</body>
+</html>
